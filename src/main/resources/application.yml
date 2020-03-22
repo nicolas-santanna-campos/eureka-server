@@ -1,7 +1,10 @@
 server:
-   port: 8761 
+  port: 8761
 
+ 
 eureka:
-   client:
-      fetch-registry: false
-      registrer-with-eureka: false
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 5
